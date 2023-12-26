@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "@micro/api-graphql",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "start:graphql",
+      ],
+      "runtimeArgs": [],
+      "env": {
+        "NODE_ENV": "development",
+        "TS_NODE_PROJECT": "${workspaceFolder}/projects/api-graphql/tsconfig.json"
+      },
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "@micro/service-customer",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "yarn",
+      "args": [
+        "start:customer",
+      ],
+      "runtimeArgs": [],
+      "env": {
+        "NODE_ENV": "development",
+        "TS_NODE_PROJECT": "${workspaceFolder}/projects/service-customer/tsconfig.json"
+      },
+    },
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@micro/shared/*": ["../shared/*"]
+    },
+    "typeRoots": [
+      "../../node_modules/@types",
+      "./types",
+    ],
+  },
+  "references": [
+    {
+      "path": "../shared",
+      "prepend": false
+    }
+  ],  
+}
